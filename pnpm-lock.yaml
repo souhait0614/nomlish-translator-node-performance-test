@@ -5,8 +5,8 @@ dependencies:
     specifier: ^0.1.0
     version: 0.1.0
   nomlish-translator-node:
-    specifier: ^0.0.4
-    version: 0.0.4
+    specifier: ^1.0.2
+    version: 1.0.2
 
 devDependencies:
   '@types/node':
@@ -346,8 +346,8 @@ packages:
       whatwg-url: 5.0.0
     dev: false
 
-  /nomlish-translator-node@0.0.4:
-    resolution: {integrity: sha512-KcO+dfVyVN+cuzybZ9oEx6K+GCl2SqngDtqDfS/KUzvMpzHg15aDZGBPqs9Z5RuiJcXSy4CCHoEL14rvDR2CGA==}
+  /nomlish-translator-node@1.0.2:
+    resolution: {integrity: sha512-K/e1aQhf9JXs7cTVa53NX03iQh09+cw765B1jg3dvow8yLBXi8krnuW7nl+dfjiDbF0N01ClAG832co6xHYXoQ==}
     engines: {node: '>=14.21.3'}
     dependencies:
       cross-fetch: 3.1.6
