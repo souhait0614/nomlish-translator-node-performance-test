@@ -5,8 +5,8 @@ dependencies:
     specifier: ^0.1.0
     version: 0.1.0
   nomlish-translator-node:
-    specifier: ^0.0.1
-    version: 0.0.1
+    specifier: ^0.0.2
+    version: 0.0.2
 
 devDependencies:
   '@types/node':
@@ -423,8 +423,8 @@ packages:
       whatwg-url: 5.0.0
     dev: false
 
-  /nomlish-translator-node@0.0.1:
-    resolution: {integrity: sha512-Cf5dSfZqr9MTZKGZ6ChjiLhJCAbU89SOCiZCOJe0nSkQH/Bm5B6FYSo/W9i/oAKV4IW2c7gNslqtGKkTs2ls8w==}
+  /nomlish-translator-node@0.0.2:
+    resolution: {integrity: sha512-h1FS2IUAf83LZEQ4b3ICOHbZJBNbvYSuFFic3sHrSWvJp9jE4OSFov98hCSP5OBFaqdIi2t3MQT8s6SLyguZpQ==}
     dependencies:
       axios: 1.4.0
       axios-cookiejar-support: 4.0.6(axios@1.4.0)(tough-cookie@4.1.3)

@@ -3,27 +3,32 @@
 const nomlish = require("nomlish");
 const nomlish_translator_node = require("nomlish-translator-node");
 
-const input =
-  "こちらに翻訳したい文章を入力してください。\n単語では効果が分かりにくいので、ニュースサイトなどから長い文章を拾ってくると良いかもしれません。\nまた、結果は毎回ランダムで変化します。";
+const input = "パフォーマンステスト用のいい感じの文章です。多分";
+
+const array = Array(5).fill(undefined);
 
 const test_nomlish = async () => {
   const time1 = performance.now();
-  const output = await nomlish.translate(input);
-  console.log(`nomlish: ${output}`);
+  for await (const i of array) {
+    const output = await nomlish.translate(input);
+    console.log(`nomlish: ${output}`);
+  }
   const time2 = performance.now();
-  console.log(`nomlish: ${time2 - time1}ms`);
+  console.log(`\nnomlish: ${time2 - time1}ms\n`);
 };
 
 const test_nomlish_translator_node = async () => {
   const time1 = performance.now();
-  const output = await nomlish_translator_node.translate(input);
-  console.log(`nomlish_translator_node: ${output}`);
+  const translator = new nomlish_translator_node.Translator();
+  for await (const i of array) {
+    const output = await translator.translate(input);
+    console.log(`nomlish_translator_node: ${output}`);
+  }
   const time2 = performance.now();
-  console.log(`nomlish_translator_node: ${time2 - time1}ms`);
+  console.log(`\nnomlish_translator_node: ${time2 - time1}ms\n`);
 };
 
 (async () => {
   await test_nomlish();
-  console.log(`\n`);
   await test_nomlish_translator_node();
-})();
+})()
