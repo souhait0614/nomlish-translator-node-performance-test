@@ -1,0 +1,9 @@
+{
+	"dependencies": {
+		"nomlish": "^0.1.0",
+		"nomlish-translator-node": "^0.0.1"
+	},
+	"devDependencies": {
+		"@types/node": "^20.2.5"
+	}
+}
